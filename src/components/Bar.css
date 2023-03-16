@@ -1,0 +1,24 @@
+.bar {
+    background-color: black;
+    width: 100vw;
+    height: 40px;  
+    position: relative;
+    content: '';
+}
+
+
+
+.bar::after {
+    content: '';
+    background-color: black;
+    width: 100vw;
+    height: 40px;
+    bottom: -10px;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: skewY(1.2deg) ;
+    transform: skewY(1.2deg);
+    position: absolute;
+}
+
